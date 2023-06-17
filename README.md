@@ -39,17 +39,32 @@ or
 
 ## Pages
 1. Top Page:
+
 	Pathname: /
+
 	Login required: YES
+
 	If you are not logged in, you will be redirected to the Login Page
+
 2. My Record Page:
+
 	Pathname: /my-record
+
 	Login required: YES
+
 	If you are not logged in, you will be redirected to the Login Page
+
 3. Column Page:
+
 	Pathname: /column
+
 	Login required: NO
+
 4. Login Page:
+
 	Pathname: /login
+
 	Login required: NO.
+
 	If you are logged in, you will be redirected to the Top Page.
+  
