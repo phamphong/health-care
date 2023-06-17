@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light: #FFFFFF;
+  --dark-500: #414141;
+  --dark-600: #2E2E2E;
+  --primary-300: #FFCC21;
+  --primary-400: #FF963C;
+  --primary-500: #EA6C00;
+  --secondary: #8FE9D0;
+  --gray-400: #777777;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #FFFFFF;
+    --dark-500: #414141;
+    --dark-600: #2E2E2E;
+    --primary-300: #FFCC21;
+    --primary-400: #FF963C;
+    --primary-500: #EA6C00;
+    --secondary: #8FE9D0;
+    --gray-400: #777777;
+  }
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  src: url(./fonts/NotoSansJP-VariableFont_wght.ttf);
+}
+
+body {
+  color: var(--dark-500);
+  background: var(--light);
+  font-weight: 300;
+  font-family: NotoSansJP;
+}
+
+.wrapper {
+  max-width: 960px;
+}
+
+.hexagon {
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background: linear-gradient(155.89deg, var(--primary-300) 8.26%, var(--primary-400) 91.18%);
+  width: 116px;
+  height: 134px;
+}
+
+.btn-common {
+  background: linear-gradient(32.95deg, var(--primary-300) 8.75%, var(--primary-400) 86.64%);
+  width: 296px;
+}
+
+.achievement-rate {
+  height: 316px;
+  background-image: url('/images/d01.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.rate-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circular-chart {
+  display: block;
+  transform: rotate(-90deg);
+}
+
+.circle {
+  fill: none;
+  stroke: var(--light);
+  stroke-width: 3;
+  filter: drop-shadow(0px 0px 6px #FC7400);
+}
+
+.achievement-rate .date {
+  text-shadow: 0px 0px 6px #FC7400;
+}
+
+.achievement-rate .percent {
+  font-size: 25px;
+  text-shadow: 0px 0px 6px #FCA500;
+}
+
+.section-btn {
+  border: var(--primary-300) 24px solid;
+}
+
+.section-btn-title {
+  font-size: 25px;
+}
+
+.section-btn-subtitle {
+  width: 160px;
+}
+
+.exercise-item {
+  border-bottom: 1px solid #777777;
+}
+
+.diary-item {
+  border: 2px solid #707070;
+}
+
+.MuiMenuItem-root {
+  border-top: 1px solid rgba(46, 46, 46, 0.25);
+  border-bottom: 1px solid rgba(65, 65, 65, 0.25);
+}
+
+@media (max-width: 920px) {
+  .wrapper {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-btn {
+    border: var(--primary-300) 14px solid;
+  }
+}
